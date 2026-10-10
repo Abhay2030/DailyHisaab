@@ -1,5 +1,6 @@
 # DailyHisaab — Roz Ka Hisaab, Ek Jagah
-<img width="2752" height="1536" alt="DailyHisaab Logo" src="https://github.com/user-attachments/assets/507bfc06-1db7-4d5a-a2bd-75de37d5f08b" />
+<img width="666" height="768" alt="DailyHisaab Logo1" src="https://github.com/user-attachments/assets/826a0930-dd2f-40bd-acb8-b1d6999e8a58" />
+
 
 **Track your expenses. Understand your spending. Manage your money smarter.**
 
