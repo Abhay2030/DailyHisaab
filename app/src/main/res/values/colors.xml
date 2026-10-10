@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Brand Colors (Emerald/Teal) -->
+    <color name="primary">#046A38</color> <!-- Rich Emerald Green -->
+    <color name="primaryVariant">#034C28</color>
+    <color name="secondary">#0F9D58</color>
+    <color name="secondaryVariant">#0B8043</color>
+    <color name="onPrimary">#FFFFFF</color>
+
+    <!-- Background & Surface -->
+    <color name="background">#F7F9F8</color> <!-- Warm off-white -->
+    <color name="surface">#FFFFFF</color>
+    <color name="onBackground">#1A1E1C</color>
+    <color name="onSurface">#1A1E1C</color>
+
+    <!-- Status colors -->
+    <color name="error">#D32F2F</color>
+    <color name="onError">#FFFFFF</color>
+    <color name="warning">#F57C00</color>
+    <color name="success">#388E3C</color>
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#1A1E1C</color>
+    <color name="textSecondary">#63706A</color>
+    <color name="textHint">#9EAAA4</color>
+
+    <!-- UI Elements -->
+    <color name="divider">#E1E7E4</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="budgetTrack">#E1E7E4</color>
+
+    <color name="transparent">#00000000</color>
+</resources>
