@@ -157,10 +157,10 @@ Install the following tools:
 
 ### Clone the Repository
 
-Replace `YOUR_USERNAME` with the GitHub account that owns the repository.
+Replace `Abhay2030` with the GitHub account that owns the repository.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/DailyHisaab.git
+git clone https://github.com/Abhay2030/DailyHisaab.git)
 ```
 
 ### Open the Project
