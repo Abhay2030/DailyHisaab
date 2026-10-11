@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="activity_margin">16dp</dimen>
-    <dimen name="card_margin">8dp</dimen>
-    <dimen name="card_padding">16dp</dimen>
-    <dimen name="card_corner_radius">12dp</dimen>
-    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="activity_margin">20dp</dimen>
+    <dimen name="card_margin">12dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="card_corner_radius">20dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
     <dimen name="text_margin">8dp</dimen>
     <dimen name="icon_size">24dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin">20dp</dimen>
+    <dimen name="app_bar_height">240dp</dimen>
 </resources>

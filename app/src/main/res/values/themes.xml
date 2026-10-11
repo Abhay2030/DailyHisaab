@@ -10,7 +10,7 @@
         <item name="colorSecondaryVariant">@color/secondaryVariant</item>
         <item name="colorOnSecondary">@color/onPrimary</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/primaryVariant</item>
+        <item name="android:statusBarColor">@color/primary</item>
 
         <!-- Background and surface -->
         <item name="android:colorBackground">@color/background</item>
@@ -20,20 +20,42 @@
         <!-- Typography -->
         <item name="android:textColorPrimary">@color/textPrimary</item>
         <item name="android:textColorSecondary">@color/textSecondary</item>
+
+        <!-- Bottom Nav -->
+        <item name="bottomNavigationStyle">@style/Widget.DailyHisaab.BottomNavigationView</item>
     </style>
 
+    <!-- Typography Styles -->
     <style name="CardTitleStyle" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:textColor">@color/textPrimary</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
-    <style name="CardAmountStyle" parent="TextAppearance.MaterialComponents.Headline4">
-        <item name="android:textColor">@color/primary</item>
-        <item name="android:textStyle">bold</item>
+    <!-- Premium Button Styles -->
+    <style name="Widget.DailyHisaab.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
     </style>
 
-    <style name="SecondaryAmountStyle" parent="TextAppearance.MaterialComponents.Headline5">
-        <item name="android:textColor">@color/textPrimary</item>
-        <item name="android:textStyle">bold</item>
+    <!-- Premium Card Styles -->
+    <style name="Widget.DailyHisaab.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Bottom Navigation Customization -->
+    <style name="Widget.DailyHisaab.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.DailyHisaab.BottomNavigation</item>
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemTextColor">@color/nav_item_color</item>
+        <item name="itemIconSize">24dp</item>
+    </style>
+
+    <style name="ThemeOverlay.DailyHisaab.BottomNavigation" parent="">
+        <item name="colorSurface">@color/surface</item>
     </style>
 </resources>

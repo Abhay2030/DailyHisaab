@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Premium Brand Colors (Emerald/Teal) -->
-    <color name="primary">#046A38</color> <!-- Rich Emerald Green -->
-    <color name="primaryVariant">#034C28</color>
-    <color name="secondary">#0F9D58</color>
-    <color name="secondaryVariant">#0B8043</color>
+    <!-- Premium Fintech Palette -->
+    <color name="primary">#055C3D</color> <!-- Deep Emerald Green -->
+    <color name="primaryVariant">#033D28</color>
+    <color name="secondary">#D4AF37</color> <!-- Refined Gold Accent -->
+    <color name="secondaryVariant">#B5952F</color>
     <color name="onPrimary">#FFFFFF</color>
 
     <!-- Background & Surface -->
-    <color name="background">#F7F9F8</color> <!-- Warm off-white -->
+    <color name="background">#F4F7F6</color> <!-- Soft neutral gray-green -->
     <color name="surface">#FFFFFF</color>
-    <color name="onBackground">#1A1E1C</color>
-    <color name="onSurface">#1A1E1C</color>
+    <color name="onBackground">#141A17</color>
+    <color name="onSurface">#141A17</color>
 
-    <!-- Status colors -->
-    <color name="error">#D32F2F</color>
+    <!-- Status & Alerts -->
+    <color name="error">#DC2626</color>
     <color name="onError">#FFFFFF</color>
-    <color name="warning">#F57C00</color>
-    <color name="success">#388E3C</color>
+    <color name="warning">#D97706</color>
+    <color name="success">#059669</color>
 
     <!-- Text Colors -->
-    <color name="textPrimary">#1A1E1C</color>
-    <color name="textSecondary">#63706A</color>
-    <color name="textHint">#9EAAA4</color>
+    <color name="textPrimary">#1E293B</color> <!-- Slate 800 -->
+    <color name="textSecondary">#64748B</color> <!-- Slate 500 -->
+    <color name="textHint">#94A3B8</color> <!-- Slate 400 -->
 
     <!-- UI Elements -->
-    <color name="divider">#E1E7E4</color>
+    <color name="divider">#E2E8F0</color> <!-- Slate 200 -->
     <color name="cardBackground">#FFFFFF</color>
-    <color name="budgetTrack">#E1E7E4</color>
+    <color name="budgetTrack">#E2E8F0</color>
+
+    <!-- Subtle Highlights -->
+    <color name="goldLight">#FFFDF5</color>
+    <color name="greenLight">#ECFDF5</color>
 
     <color name="transparent">#00000000</color>
 </resources>

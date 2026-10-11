@@ -10,6 +10,7 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:elevation="0dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
@@ -24,8 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="8dp"
-            android:background="?attr/colorPrimaryVariant">
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:background="?attr/colorPrimary">
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/searchView"
@@ -34,15 +36,28 @@
                 android:layout_weight="1"
                 app:queryHint="@string/search_hint"
                 app:iconifiedByDefault="false"
-                android:background="@android:color/white"
+                android:background="@drawable/search_bg"
                 android:layout_marginEnd="8dp"/>
 
-            <Spinner
-                android:id="@+id/spinnerFilterCategory"
-                android:layout_width="wrap_content"
+            <FrameLayout
+                android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/white"
-                android:minWidth="120dp"/>
+                android:background="@drawable/search_bg">
+                <Spinner
+                    android:id="@+id/spinnerFilterCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/arrow_down_float"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="8dp"
+                    app:tint="?android:attr/textColorSecondary"/>
+            </FrameLayout>
         </LinearLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -51,21 +66,37 @@
         android:id="@+id/rvHistory"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:padding="@dimen/activity_margin"
+        android:paddingTop="8dp"
         android:clipToPadding="false"
         app:layout_constraintTop_toBottomOf="@id/appBarLayout"
         app:layout_constraintBottom_toTopOf="@id/layoutFooter"/>
 
-    <TextView
-        android:id="@+id/tvEmptyHistory"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/layoutEmptyHistory"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/no_history"
+        android:orientation="vertical"
+        android:gravity="center"
         android:visibility="gone"
         app:layout_constraintTop_toTopOf="@id/rvHistory"
-        app:layout_constraintBottom_toBottomOf="@id/rvHistory"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@id/rvHistory">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_logo"
+            app:tint="@color/textHint"
+            android:alpha="0.5"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvEmptyHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_history"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="16sp"/>
+    </LinearLayout>
 
     <!-- Global Copyright Footer -->
     <include layout="@layout/layout_footer"
@@ -80,8 +111,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_nav_menu"
-        android:background="?attr/colorSurface"
-        app:itemIconTint="?attr/colorPrimary"
-        app:itemTextColor="?attr/colorPrimary"/>
+        app:elevation="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

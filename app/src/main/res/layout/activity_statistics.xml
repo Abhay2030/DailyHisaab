@@ -10,6 +10,7 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:elevation="0dp"
         app:layout_constraintTop_toTopOf="parent">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -30,26 +31,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="@dimen/activity_margin">
+            android:paddingHorizontal="@dimen/activity_margin"
+            android:paddingTop="24dp">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation">
+                android:layout_marginBottom="24dp"
+                style="@style/Widget.DailyHisaab.Card">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:padding="24dp"
+                    android:background="?attr/colorSurface">
 
                     <!-- Stats Grid -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -59,6 +62,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/stat_total_amount"
+                                android:textSize="13sp"
                                 android:textColor="?android:attr/textColorSecondary"/>
                             <TextView
                                 android:id="@+id/tvStatTotal"
@@ -67,7 +71,8 @@
                                 android:text="₹0.00"
                                 android:textStyle="bold"
                                 android:textColor="?attr/colorPrimary"
-                                android:textSize="18sp"/>
+                                android:textSize="20sp"
+                                android:layout_marginTop="4dp"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="0dp"
@@ -78,6 +83,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/stat_total_count"
+                                android:textSize="13sp"
                                 android:textColor="?android:attr/textColorSecondary"/>
                             <TextView
                                 android:id="@+id/tvStatCount"
@@ -86,7 +92,8 @@
                                 android:text="0"
                                 android:textStyle="bold"
                                 android:textColor="?android:attr/textColorPrimary"
-                                android:textSize="18sp"/>
+                                android:textSize="20sp"
+                                android:layout_marginTop="4dp"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -94,7 +101,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_marginTop="16dp">
+                        android:layout_marginTop="20dp"
+                        android:baselineAligned="false">
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -104,6 +112,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/stat_average"
+                                android:textSize="13sp"
                                 android:textColor="?android:attr/textColorSecondary"/>
                             <TextView
                                 android:id="@+id/tvStatAverage"
@@ -112,7 +121,8 @@
                                 android:text="₹0.00"
                                 android:textStyle="bold"
                                 android:textColor="?android:attr/textColorPrimary"
-                                android:textSize="18sp"/>
+                                android:textSize="16sp"
+                                android:layout_marginTop="4dp"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="0dp"
@@ -123,6 +133,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/stat_highest"
+                                android:textSize="13sp"
                                 android:textColor="?android:attr/textColorSecondary"/>
                             <TextView
                                 android:id="@+id/tvStatHighest"
@@ -131,7 +142,8 @@
                                 android:text="₹0.00"
                                 android:textStyle="bold"
                                 android:textColor="?android:attr/textColorPrimary"
-                                android:textSize="18sp"/>
+                                android:textSize="16sp"
+                                android:layout_marginTop="4dp"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -142,14 +154,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/stat_category_wise"
                 style="@style/CardTitleStyle"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="16dp"/>
 
             <!-- MPAndroidChart PieChart -->
             <com.github.mikephil.charting.charts.PieChart
                 android:id="@+id/pieChart"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="24dp"/>
 
             <LinearLayout
                 android:id="@+id/layoutCategoryStats"
@@ -172,8 +184,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_nav_menu"
-        android:background="?attr/colorSurface"
-        app:itemIconTint="?attr/colorPrimary"
-        app:itemTextColor="?attr/colorPrimary"/>
+        app:elevation="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
