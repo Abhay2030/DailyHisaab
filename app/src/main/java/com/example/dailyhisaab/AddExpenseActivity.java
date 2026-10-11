@@ -210,7 +210,7 @@ public class AddExpenseActivity extends AppCompatActivity {
         btnSave.setEnabled(false);
 
         double amount = Double.parseDouble(amountStr);
-        Expense expense = new Expense(-1, title.trim(), amount, category, selectedDbDate, note.trim(), paymentMethod);
+        Expense expense = new Expense(-1, title.trim(), amount, category, selectedDbDate, note.trim(), paymentMethod, AppConstants.TYPE_EXPENSE);
 
         long result;
         if (expenseIdToEdit != -1) {

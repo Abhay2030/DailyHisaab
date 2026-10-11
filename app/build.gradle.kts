@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -26,6 +27,9 @@ android {
             }
         }
     }
+    buildFeatures {
+        compose = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -33,6 +37,18 @@ android {
 }
 
 dependencies {
+    implementation(platform(libs.compose.bom))
+    implementation(libs.ui)
+    implementation(libs.ui.graphics)
+    implementation(libs.ui.tooling.preview)
+    implementation(libs.material3)
+    implementation(libs.activity.compose)
+    implementation(libs.lifecycle.viewmodel.compose)
+    implementation(libs.lifecycle.runtime.compose)
+    implementation(libs.navigation.compose)
+    
+    debugImplementation(libs.ui.tooling)
+
     implementation(libs.activity.ktx)
     implementation(libs.appcompat)
     implementation(libs.constraintlayout)
