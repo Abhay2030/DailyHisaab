@@ -1,3 +1,7 @@
+<img width="1331" height="1536" alt="image" src="https://github.com/user-attachments/assets/cbb33b75-044e-4368-b1ee-fa94b4dfadf3" />
+
+
+
 DailyHisaab — Offline Android Expense Tracker & Personal Finance App
 DailyHisaab — Roz Ka Hisaab, Ek Jagah is an Android expense-tracking application designed to help people record everyday spending, organize expenses by category, review their transaction history, and understand their personal finances in one place.
 Built with Java, XML, and SQLite in Android Studio, DailyHisaab focuses on straightforward money management, local data storage, and an interface intended for everyday use in India. It is a practical project for anyone interested in Android app development, expense tracking, budgeting, and offline-first mobile applications.
